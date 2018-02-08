@@ -3,19 +3,19 @@
 
 _pkgbase=include-what-you-use
 pkgname="$_pkgbase-git"
-pkgver=r664.953970c
+pkgver=r693.15b3f1d
 pkgrel=1
 pkgdesc="A tool for use with clang to analyze #includes in C and C++ source files"
 url="https://include-what-you-use.org/"
 license=('LLVM Release License')
 arch=('i686' 'x86_64')
-depends=('clang>=4.0' 'clang<4.1')
-makedepends=('clang>=4.0' 'clang<4.1')
+depends=('clang>=5.0' 'clang<5.1')
+makedepends=('clang>=5.0' 'clang<5.1')
 optdepends=('python: for the fix_includes.py script')
 conflicts=("$_pkgbase")
 provides=("$_pkgbase=0.8")
 
-source=("$_pkgbase::git+https://github.com/include-what-you-use/include-what-you-use#branch=clang_4.0")
+source=("$_pkgbase::git+https://github.com/include-what-you-use/include-what-you-use#branch=clang_5.0")
 sha1sums=('SKIP')
 
 pkgver() {
